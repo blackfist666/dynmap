@@ -481,8 +481,6 @@ texture:id=beetroots_stage0
 texture:id=beetroots_stage1
 texture:id=beetroots_stage2
 texture:id=beetroots_stage3
-[-1.16.5]texture:id=grass_path_top
-[-1.16.5]texture:id=grass_path_side
 texture:id=command_block_back
 texture:id=command_block_front
 texture:id=command_block_side
@@ -733,17 +731,17 @@ block:id=stripped_dark_oak_wood,data=1,allsides=0:stripped_dark_oak_log,topbotto
 block:id=stripped_dark_oak_wood,data=0,north=0:stripped_dark_oak_log,south=0:stripped_dark_oak_log,east=4000:stripped_dark_oak_log,west=4000:stripped_dark_oak_log,top=0:stripped_dark_oak_log,bottom=0:stripped_dark_oak_log
 block:id=stripped_dark_oak_wood,data=2,north=4000:stripped_dark_oak_log,south=4000:stripped_dark_oak_log,east=0:stripped_dark_oak_log,west=0:stripped_dark_oak_log,top=4000:stripped_dark_oak_log,bottom=4000:stripped_dark_oak_log
 # Leaves (oak)
-block:id=oak_leaves,allfaces=2000:oak_leaves,stdrot=true,transparency=LEAVES
+block:id=oak_leaves,allfaces=2000:oak_leaves,stdrot=true,transparency=TRANSPARENT
 # Leaves (spruce/pine)
-block:id=spruce_leaves,allfaces=13000:spruce_leaves,stdrot=true,transparency=LEAVES
+block:id=spruce_leaves,allfaces=13000:spruce_leaves,stdrot=true,transparency=TRANSPARENT
 # Leaves (birch)
-block:id=birch_leaves,allfaces=14000:birch_leaves,stdrot=true,transparency=LEAVES
+block:id=birch_leaves,allfaces=14000:birch_leaves,stdrot=true,transparency=TRANSPARENT
 # Leaves (jungle)
-block:id=jungle_leaves,allfaces=2000:jungle_leaves,stdrot=true,transparency=LEAVES
+block:id=jungle_leaves,allfaces=2000:jungle_leaves,stdrot=true,transparency=TRANSPARENT
 # Leaves (acacia)
-block:id=acacia_leaves,allfaces=2000:acacia_leaves,stdrot=true,transparency=LEAVES
+block:id=acacia_leaves,allfaces=2000:acacia_leaves,stdrot=true,transparency=TRANSPARENT
 # Leaves (dark oak)
-block:id=dark_oak_leaves,allfaces=2000:dark_oak_leaves,stdrot=true,transparency=LEAVES
+block:id=dark_oak_leaves,allfaces=2000:dark_oak_leaves,stdrot=true,transparency=TRANSPARENT
 # Sponge
 block:id=sponge,allfaces=0:sponge,stdrot=true
 # Glass
@@ -814,7 +812,6 @@ block:id=detector_rail,state=powered:false,patch0=0:detector_rail,transparency=T
 # Web
 block:id=cobweb,patch0-1=0:cobweb,transparency=TRANSPARENT
 # Grass
-[-1.20.2]block:id=grass,patch0-1=1000:grass,transparency=TRANSPARENT
 [1.20.3-]block:id=short_grass,patch0-1=1000:grass,transparency=TRANSPARENT
 # Fern
 block:id=fern,patch0-1=1000:fern,transparency=TRANSPARENT
@@ -951,25 +948,20 @@ block:id=oak_door,data=*,patch0=0:oak_door_top,patch1=0:oak_door_bottom,transpar
 # Ladder
 block:id=ladder,patch0=0:ladder,transparency=TRANSPARENT
 # Rail - heading north-south
-[-1.16.5]block:id=rail,data=0,patch0=0:rail,transparency=TRANSPARENT
-[1.17-]block:id=rail,data=0,data=1,patch0=0:rail,transparency=TRANSPARENT
+block:id=rail,data=0,data=1,patch0=0:rail,transparency=TRANSPARENT
 # Rail - heading east-west
-[-1.16.5]block:id=rail,data=1,patch0=0:rail,transparency=TRANSPARENT
-[1.17-]block:id=rail,data=2,data=3,patch0=0:rail,transparency=TRANSPARENT
+block:id=rail,data=2,data=3,patch0=0:rail,transparency=TRANSPARENT
 # Rail - incline to east
 # Rail - incline to west
-[-1.16.5]block:id=rail,data=2,data=3,patch0=0:rail,transparency=TRANSPARENT
-[1.17-]block:id=rail,data=4,data=5,data=6,data=7,patch0=0:rail,transparency=TRANSPARENT
+block:id=rail,data=4,data=5,data=6,data=7,patch0=0:rail,transparency=TRANSPARENT
 # Rail - incline to north
 # Rail - incline to south
-[-1.16.5]block:id=rail,data=4,data=5,patch0=0:rail,transparency=TRANSPARENT
-[1.17-]block:id=rail,data=8,data=9,data=10,data=11,patch0=0:rail,transparency=TRANSPARENT
+block:id=rail,data=8,data=9,data=10,data=11,patch0=0:rail,transparency=TRANSPARENT
 # Rails - southeast corner
 # Rails - southwest corner
 # Rails - northwest corner
 # Rails - northeast corner
-[-1.16.5]block:id=rail,data=6,data=7,data=8,data=9,patch0=0:rail_corner,transparency=TRANSPARENT
-[1.17-]block:id=rail,data=12,data=13,data=14,data=15,data=16,data=17,data=18,data=19,patch0=0:rail_corner,transparency=TRANSPARENT
+block:id=rail,data=12,data=13,data=14,data=15,data=16,data=17,data=18,data=19,patch0=0:rail_corner,transparency=TRANSPARENT
 # Cobblestone Stairs
 block:id=cobblestone_stairs,patch0-2=0:cobblestone,transparency=SEMITRANSPARENT
 # Lever
@@ -1383,11 +1375,9 @@ block:id=quartz_pillar,data=2,top=0:quartz_pillar,bottom=0:quartz_pillar,north=6
 block:id=quartz_stairs,patch0=0:quartz_block_side,patch1=0:quartz_block_top,patch2=0:quartz_block_bottom,transparency=SEMITRANSPARENT
 
 # Activator rail - powered
-[-1.16.5]block:id=activator_rail,data=0-5,patch0=0:activator_rail_on,transparency=TRANSPARENT
-[1.17-]block:id=activator_rail,data=0-11,patch0=0:activator_rail_on,transparency=TRANSPARENT
+block:id=activator_rail,data=0-11,patch0=0:activator_rail_on,transparency=TRANSPARENT
 # Activator rail - unpowered
-[-1.16.5]block:id=activator_rail,data=6-11,patch0=0:activator_rail,transparency=TRANSPARENT
-[1.17-]block:id=activator_rail,data=12-23,patch0=0:activator_rail,transparency=TRANSPARENT
+block:id=activator_rail,data=12-23,patch0=0:activator_rail,transparency=TRANSPARENT
 
 # (158)	Dropper
 block:id=%dropper,state=facing:north,patch0=0:furnace_side,patch1=0:furnace_top,patch2=0:dropper_front,patch3=0:furnace_side,patch4=0:furnace_top,patch5=0:furnace_side,stdrot=true
@@ -1447,13 +1437,13 @@ block:id=black_carpet,stdrot=true,allfaces=0:black_wool
 block:id=red_carpet,stdrot=true,allfaces=0:red_wool
 block:id=green_carpet,stdrot=true,allfaces=0:green_wool
 block:id=brown_carpet,stdrot=true,allfaces=0:brown_wool
-block:id=blue_carpet,,stdrot=true,allfaces=0:blue_wool
+block:id=blue_carpet,stdrot=true,allfaces=0:blue_wool
 block:id=purple_carpet,stdrot=true,allfaces=0:purple_wool
 block:id=cyan_carpet,stdrot=true,allfaces=0:cyan_wool
 block:id=light_gray_carpet,stdrot=true,allfaces=0:light_gray_wool
 block:id=gray_carpet,stdrot=true,allfaces=0:gray_wool
 block:id=pink_carpet,stdrot=true,allfaces=0:pink_wool
-block:id=lime_carpet,,stdrot=true,allfaces=0:lime_wool
+block:id=lime_carpet,stdrot=true,allfaces=0:lime_wool
 block:id=yellow_carpet,stdrot=true,allfaces=0:yellow_wool
 block:id=light_blue_carpet,stdrot=true,allfaces=0:light_blue_wool
 block:id=magenta_carpet,stdrot=true,allfaces=0:magenta_wool
@@ -1598,9 +1588,6 @@ block:id=beetroots,data=0,patch0-3=0:beetroots_stage0,transparency=TRANSPARENT
 block:id=beetroots,data=1,patch0-3=0:beetroots_stage1,transparency=TRANSPARENT
 block:id=beetroots,data=2,patch0-3=0:beetroots_stage2,transparency=TRANSPARENT
 block:id=beetroots,data=3,patch0-3=0:beetroots_stage3,transparency=TRANSPARENT
-
-# Grass Path (replaced with dirt path in 1.17
-[-1.16.5]block:id=grass_path,allsides=0:grass_path_side,top=0:grass_path_top,bottom=0:dirt,stdrot=true, transparency=SEMITRANSPARENT
 
 # End Gateway
 block:id=end_gateway,data=*,stdrot=true,allfaces=0:endportal
@@ -2104,13 +2091,6 @@ block:id=black_banner,id=black_wall_banner,data=*,patch0=0:oak_planks,patch1=0:b
 # Dead horn coral
 [1.13.1-]block:id=dead_horn_coral,patch0-1=0:dead_horn_coral,transparency=TRANSPARENT
 
-# Signpost
-[-1.13.2]block:id=sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,patch6=6,patch7=7,patch8=8,patch9=9,transparency=TRANSPARENT,txtid=sign
-# Wall sign
-[-1.13.2]block:id=wall_sign,patch0=0,patch1=1,patch2=2,patch3=3,patch4=4,patch5=5,transparency=TRANSPARENT,txtid=sign
-
-
-
 [1.14-]texture:id=cornflower
 [1.14-]texture:id=wither_rose
 [1.14-]texture:id=lily_of_the_valley
@@ -2390,7 +2370,6 @@ block:id=black_banner,id=black_wall_banner,data=*,patch0=0:oak_planks,patch1=0:b
 [1.16-]texture:id=polished_basalt_side
 [1.16-]texture:id=polished_basalt_top
 [1.16-]texture:id=soul_torch
-[1.16-1.21.4]texture:id=chain
 [1.16-]texture:id=soul_campfire_log_lit
 [1.16-]texture:id=soul_campfire_fire
 [1.16-]texture:id=soul_lantern
@@ -2472,8 +2451,6 @@ block:id=black_banner,id=black_wall_banner,data=*,patch0=0:oak_planks,patch1=0:b
 [1.16-]block:id=soul_torch,patch0=0:soul_torch,transparency=TRANSPARENT
 # Soul Wall torch
 [1.16-]block:id=soul_wall_torch,data=0,data=1,data=2,data=3,patch0=0:soul_torch,transparency=TRANSPARENT
-# Chain
-[1.16-1.21.4]block:id=chain,patch0=0:chain,transparency=TRANSPARENT
 # Soul Lantern
 [1.16-]block:id=soul_lantern,patch0=0:soul_lantern,transparency=TRANSPARENT
 # Soul Campfire
@@ -4795,8 +4772,8 @@ block:id=%melon_stem,patch0=0:melon_stem,blockcolor=foliagebiome,transparency=TR
 #Pale hanging moss
 [1.21.4-]texture:id=pale_hanging_moss
 [1.21.4-]texture:id=pale_hanging_moss_tip
-[1.21.4-]block:id=pale_hanging_moss,tip:false,patch0-1=0:pale_hanging_moss,transparency=TRANSPARENT
-[1.21.4-]block:id=pale_hanging_moss,tip:true,patch0-1=0:pale_hanging_moss_tip,transparency=TRANSPARENT
+[1.21.4-]block:id=pale_hanging_moss,state=tip:false,patch0-1=0:pale_hanging_moss,transparency=TRANSPARENT
+[1.21.4-]block:id=pale_hanging_moss,state=tip:true,patch0-1=0:pale_hanging_moss_tip,transparency=TRANSPARENT
 #All the pale wooden stuff
 [1.21.4-]texture:id=pale_oak_planks,filename=assets/minecraft/textures/block/pale_oak_planks.png,xcount=1,ycount=1
 [1.21.4-]texture:id=pale_oak_sapling,filename=assets/minecraft/textures/block/pale_oak_sapling.png,xcount=1,ycount=1
@@ -5228,7 +5205,7 @@ block:id=%melon_stem,patch0=0:melon_stem,blockcolor=foliagebiome,transparency=TR
 [1.21.6-]texture:id=dried_ghast_hydration_2_east,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_east.png,xcount=1,ycount=1
 [1.21.6-]texture:id=dried_ghast_hydration_2_north,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_north.png,xcount=1,ycount=1
 [1.21.6-]texture:id=dried_ghast_hydration_2_south,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_south.png,xcount=1,ycount=1
-[1.21.6-]texture:id=dried_ghast_hydration_2_tentacles,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_tentacles.png,xcount=1,ycount
+[1.21.6-]texture:id=dried_ghast_hydration_2_tentacles,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_tentacles.png,xcount=1,ycount=1
 [1.21.6-]texture:id=dried_ghast_hydration_2_top,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_top.png,xcount=1,ycount=1
 [1.21.6-]texture:id=dried_ghast_hydration_2_west,filename=assets/minecraft/textures/block/dried_ghast_hydration_2_west.png,xcount=1,ycount=1
 [1.21.6-]texture:id=dried_ghast_hydration_3_bottom,filename=assets/minecraft/textures/block/dried_ghast_hydration_3_bottom.png,xcount=1,ycount=1
@@ -5240,8 +5217,8 @@ block:id=%melon_stem,patch0=0:melon_stem,blockcolor=foliagebiome,transparency=TR
 [1.21.6-]texture:id=dried_ghast_hydration_3_west,filename=assets/minecraft/textures/block/dried_ghast_hydration_3_west.png,xcount=1,ycount=1
 [1.21.6-]block:id=%dried_ghast,state=hydration:0/facing:north,patch0=0:dried_ghast_hydration_0_north,patch1=0:dried_ghast_hydration_0_bottom,patch2=0:dried_ghast_hydration_0_east,patch3=0:dried_ghast_hydration_0_south,patch4=0:dried_ghast_hydration_0_west,patch5=0:dried_ghast_hydration_0_top,patch6=0:dried_ghast_hydration_0_tentacles,transparency=SEMITRANSPARENT,stdrot=true
 [1.21.6-]block:id=%dried_ghast,state=hydration:0/facing:south,patch0=5000:dried_ghast_hydration_0_north,patch1=0:dried_ghast_hydration_0_bottom,patch2=0:dried_ghast_hydration_0_east,patch3=0:dried_ghast_hydration_0_south,patch4=0:dried_ghast_hydration_0_west,patch5=0:dried_ghast_hydration_0_top,patch6=0:dried_ghast_hydration_0_tentacles,transparency=SEMITRANSPARENT,stdrot=true
-[1.21.6-]block:id=%dried_ghast,state=hydration:0/facing:west,patch0=0:dried_ghast_hydration_0_north,patch1=0:dried_ghast_hydration_0_bottom,patch2=0:dried_ghast_hydration_0_east,patch3=0:dried_ghast_hydration_0_south,patch4=0:dried_ghast_hydration_0_west,patch5=0:dried_ghast_hydration_0_top,patch6=0:dried_ghast_hydration_0_tentacles,transparency=SEMITRANSPARENT,sstdrot=true
-[1.21.6-]block:id=%dried_ghast,state=hydration:0/facing:east,patch0=5000:dried_ghast_hydration_0_north,patch1=0:dried_ghast_hydration_0_bottom,patch2=0:dried_ghast_hydration_0_east,patch3=0:dried_ghast_hydration_0_south,patch4=0:dried_ghast_hydration_0_west,patch5=0:dried_ghast_hydration_0_top,patch6=0:dried_ghast_hydration_0_tentacles,transparency=SEMITRANSPARENT,sstdrot=true
+[1.21.6-]block:id=%dried_ghast,state=hydration:0/facing:west,patch0=0:dried_ghast_hydration_0_north,patch1=0:dried_ghast_hydration_0_bottom,patch2=0:dried_ghast_hydration_0_east,patch3=0:dried_ghast_hydration_0_south,patch4=0:dried_ghast_hydration_0_west,patch5=0:dried_ghast_hydration_0_top,patch6=0:dried_ghast_hydration_0_tentacles,transparency=SEMITRANSPARENT,stdrot=true
+[1.21.6-]block:id=%dried_ghast,state=hydration:0/facing:east,patch0=5000:dried_ghast_hydration_0_north,patch1=0:dried_ghast_hydration_0_bottom,patch2=0:dried_ghast_hydration_0_east,patch3=0:dried_ghast_hydration_0_south,patch4=0:dried_ghast_hydration_0_west,patch5=0:dried_ghast_hydration_0_top,patch6=0:dried_ghast_hydration_0_tentacles,transparency=SEMITRANSPARENT,stdrot=true
 [1.21.6-]block:id=%dried_ghast,state=hydration:1/facing:north,patch0=0:dried_ghast_hydration_1_top,patch1=0:dried_ghast_hydration_1_bottom,patch2=0:dried_ghast_hydration_1_east,patch3=0:dried_ghast_hydration_1_south,patch4=0:dried_ghast_hydration_1_west,patch5=0:dried_ghast_hydration_1_north,patch6=0:dried_ghast_hydration_1_tentacles,transparency=SEMITRANSPARENT,stdrot=true
 [1.21.6-]block:id=%dried_ghast,state=hydration:2/facing:north,patch0=0:dried_ghast_hydration_2_top,patch1=0:dried_ghast_hydration_2_bottom,patch2=0:dried_ghast_hydration_2_east,patch3=0:dried_ghast_hydration_2_south,patch4=0:dried_ghast_hydration_2_west,patch5=0:dried_ghast_hydration_2_north,patch6=0:dried_ghast_hydration_2_tentacles,transparency=SEMITRANSPARENT,stdrot=true
 [1.21.6-]block:id=%dried_ghast,state=hydration:3/facing:north,patch0=0:dried_ghast_hydration_3_top,patch1=0:dried_ghast_hydration_3_bottom,patch2=0:dried_ghast_hydration_3_east,patch3=0:dried_ghast_hydration_3_south,patch4=0:dried_ghast_hydration_3_west,patch5=0:dried_ghast_hydration_3_north,patch6=0:dried_ghast_hydration_3_tentacles,transparency=SEMITRANSPARENT,stdrot=true
@@ -6097,3 +6074,47 @@ block:id=%melon_stem,patch0=0:melon_stem,blockcolor=foliagebiome,transparency=TR
 [1.21.9-]texturefile:id=oxidized_copper_chest,filename=assets/minecraft/textures/entity/chest/copper_oxidized.png,format=CHEST
 [1.21.9-]texturefile:id=bigooxidizedcopperchest,filename=assets/minecraft/textures/entity/chest/copper_oxidized_double.png,format=BIGCHEST
 [1.21.9-]block:id=oxidized_copper_chest,id=waxed_oxidized_copper_chest,data=*,patch0=0:oxidized_copper_chest,patch1=1:oxidized_copper_chest,patch2=2:oxidized_copper_chest,patch3=3:oxidized_copper_chest,patch4=4:oxidized_copper_chest,patch5=5:oxidized_copper_chest,patch6=0:bigooxidizedcopperchest,patch7=1:bigooxidizedcopperchest,patch8=2:bigooxidizedcopperchest,patch9=3:bigooxidizedcopperchest,patch10=4:bigooxidizedcopperchest,patch11=5:bigooxidizedcopperchest,patch12=6:bigooxidizedcopperchest,patch13=7:bigooxidizedcopperchest,patch14=8:bigooxidizedcopperchest,patch15=9:bigooxidizedcopperchest
+
+# Tiny Takeover 26.1
+[26.1-]block:id=golden_dandelion,patch0-1=0:dandelion,transparency=TRANSPARENT
+[26.1-]block:id=potted_golden_dandelion,patch0-5=0:flower_pot,patch6=0:dirt,patch7-8=0:dandelion,transparency=TRANSPARENT
+
+# Chaos Cubed 26.2
+[26.2-]block:id=sulfur,allfaces=0:yellow_concrete,stdrot=true
+[26.2-]block:id=polished_sulfur,allfaces=0:yellow_terracotta,stdrot=true
+[26.2-]block:id=sulfur_bricks,allfaces=0:sandstone,stdrot=true
+[26.2-]block:id=chiseled_sulfur,allfaces=0:sandstone_top,stdrot=true
+
+[26.2-]block:id=cinnabar,allfaces=0:redstone_block,stdrot=true
+[26.2-]block:id=polished_cinnabar,allfaces=0:red_terracotta,stdrot=true
+[26.2-]block:id=cinnabar_bricks,allfaces=0:red_sandstone,stdrot=true
+[26.2-]block:id=chiseled_cinnabar,allfaces=0:red_sandstone,stdrot=true
+
+[26.2-]block:id=potent_sulfur,allfaces=0:magma,stdrot=true
+
+[26.2-]block:id=sulfur_stairs,patch0-2=0:yellow_concrete,transparency=SEMITRANSPARENT
+[26.2-]block:id=polished_sulfur_stairs,patch0-2=0:yellow_terracotta,transparency=SEMITRANSPARENT
+[26.2-]block:id=sulfur_brick_stairs,patch0-2=0:sandstone,transparency=SEMITRANSPARENT
+[26.2-]block:id=cinnabar_stairs,patch0-2=0:redstone_block,transparency=SEMITRANSPARENT
+[26.2-]block:id=polished_cinnabar_stairs,patch0-2=0:red_terracotta,transparency=SEMITRANSPARENT
+[26.2-]block:id=cinnabar_brick_stairs,patch0-2=0:red_sandstone,transparency=SEMITRANSPARENT
+
+[26.2-]block:id=sulfur_slab,state=type:top,state=type:bottom,allfaces=0:yellow_concrete,stdrot=true,transparency=SEMITRANSPARENT
+[26.2-]block:id=sulfur_slab,state=type:double,allfaces=0:yellow_concrete,stdrot=true
+[26.2-]block:id=polished_sulfur_slab,state=type:top,state=type:bottom,allfaces=0:yellow_terracotta,stdrot=true,transparency=SEMITRANSPARENT
+[26.2-]block:id=polished_sulfur_slab,state=type:double,allfaces=0:yellow_terracotta,stdrot=true
+[26.2-]block:id=sulfur_brick_slab,state=type:top,state=type:bottom,allfaces=0:sandstone,stdrot=true,transparency=SEMITRANSPARENT
+[26.2-]block:id=sulfur_brick_slab,state=type:double,allfaces=0:sandstone,stdrot=true
+[26.2-]block:id=cinnabar_slab,state=type:top,state=type:bottom,allfaces=0:redstone_block,stdrot=true,transparency=SEMITRANSPARENT
+[26.2-]block:id=cinnabar_slab,state=type:double,allfaces=0:redstone_block,stdrot=true
+[26.2-]block:id=polished_cinnabar_slab,state=type:top,state=type:bottom,allfaces=0:red_terracotta,stdrot=true,transparency=SEMITRANSPARENT
+[26.2-]block:id=polished_cinnabar_slab,state=type:double,allfaces=0:red_terracotta,stdrot=true
+[26.2-]block:id=cinnabar_brick_slab,state=type:top,state=type:bottom,allfaces=0:red_sandstone,stdrot=true,transparency=SEMITRANSPARENT
+[26.2-]block:id=cinnabar_brick_slab,state=type:double,allfaces=0:red_sandstone,stdrot=true
+
+[26.2-]block:id=sulfur_wall,patch0-2=0:yellow_concrete,transparency=TRANSPARENT
+[26.2-]block:id=polished_sulfur_wall,patch0-2=0:yellow_terracotta,transparency=TRANSPARENT
+[26.2-]block:id=sulfur_brick_wall,patch0-2=0:sandstone,transparency=TRANSPARENT
+[26.2-]block:id=cinnabar_wall,patch0-2=0:redstone_block,transparency=TRANSPARENT
+[26.2-]block:id=polished_cinnabar_wall,patch0-2=0:red_terracotta,transparency=TRANSPARENT
+[26.2-]block:id=cinnabar_brick_wall,patch0-2=0:red_sandstone,transparency=TRANSPARENT
